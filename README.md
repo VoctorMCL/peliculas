@@ -44,13 +44,14 @@ El servidor levanta en el puerto `1309`.
 ### 1. Registrar usuario
 `POST /api/usuario/registrar`
 
-\```json
+```json
 {
   "username": "admin1",
   "password": "123456",
   "rol": "administrador"
 }
-\```
+```
+
 `rol` es opcional. Si no se envia, queda como `basico`.
 
 ### 2. Login
@@ -127,9 +128,9 @@ Funciona igual para `precio`. Los dos parametros son independientes entre si:
 ---
 
 **Desarrollado por:** Víctor Manuel Cordoba Larez y Ricardo Jaraba Gallego
-**Carrera:** Ingeniería Informática  
-**Materia:** Desarrollo Web  
-**Institución:** Corporación Universitaria Lasallista
-Ricardo Jaraba Gallego
 
-**Materia:** Desarrollo Web
+**Carrera:** Ingeniería Informática  
+
+**Materia:** Desarrollo Web  
+
+**Institución:** Corporación Universitaria Lasallista
