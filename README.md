@@ -65,11 +65,11 @@ El servidor levanta en el puerto `1309`.
 \```
 
 Respuesta:
-\```json
+```json
 {
   "token": "..."
 }
-\```
+```
 
 Ese token se usa en el header `Authorization: Bearer <token>` para los siguientes endpoints.
 
@@ -78,7 +78,7 @@ Ese token se usa en el header `Authorization: Bearer <token>` para los siguiente
 
 Header: `Authorization: Bearer <token>`
 
-\```json
+```json
 {
   "titulo": "Interstellar",
   "director": "Christopher Nolan",
@@ -86,7 +86,7 @@ Header: `Authorization: Bearer <token>`
   "productora": "Paramount",
   "precio": 15000
 }
-\```
+```
 
 Si el usuario logueado no es `administrador`, responde `403`.
 
