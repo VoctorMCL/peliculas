@@ -23,17 +23,17 @@ El backend completo se encuentra distribuido en las siguientes carpetas:
 
 ## Instalacion
 
-\```
+```
 npm install
-\```
+```
 
 Asegurate de tener MongoDB corriendo en `mongodb://localhost:27017`.
 
 ## Ejecutar el proyecto
 
-\```
+```
 node index.js
-\```
+```
 
 El servidor levanta en el puerto `1309`.
 
@@ -57,12 +57,12 @@ El servidor levanta en el puerto `1309`.
 ### 2. Login
 `POST /api/usuario/login`
 
-\```json
+```json
 {
   "username": "admin1",
   "password": "123456"
 }
-\```
+```
 
 Respuesta:
 ```json
@@ -102,9 +102,9 @@ Header: `Authorization: Bearer <token>`
 
 El enunciado del parcial pide especificamente: peliculas cuyo `anioLanzamiento` sea **mayor** a un valor dado, **y** cuyo `precio` sea **menor o igual** a otro valor dado. Ese caso puntual funciona tal cual con:
 
-\```
+```
 GET /api/pelicula/buscar?anio=>2010&precio=<=20000
-\```
+```
 
 > **Nota:** aunque el punto 4 del parcial solo pedia ese filtro puntual (mayor / menor o igual), decidimos complementarlo agregando el resto de operadores de comparacion (igual, mayor, mayor o igual, menor, menor o igual), para que la busqueda fuera mas completa y no quedara limitada a un solo caso. Esto no reemplaza lo pedido, lo incluye: usando exactamente `anio=>X&precio=<=Y` se obtiene el mismo resultado que exige el enunciado.
 
