@@ -11,7 +11,7 @@ function crearToken(usuario){
         email: usuario.username,
         rol: usuario.rol,
         iat: moment().unix(),
-        exp: moment().add(9,'minutes').unix()
+        exp: moment().add(3,'minutes').unix()
     }
     return jwt.encode(payload, secret);
 }
